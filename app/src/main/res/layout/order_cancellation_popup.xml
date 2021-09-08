@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+   android:background="@color/glass"
+    android:layout_gravity="center"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:background="@drawable/buttonlogin"
+        android:backgroundTint="@color/white">
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/dot"
+        android:backgroundTint="@color/color1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="70sp"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:text=" ? "></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Really want to cancel this order?"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/color1"
+        android:id="@+id/title_text_alert"></TextView>
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/color1"
+        android:text="Yes, Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+    <Button
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/color2"
+        android:text="No, Cancel"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+</LinearLayout>
+</LinearLayout>

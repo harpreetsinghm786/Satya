@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:class="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/drawer"
+            android:background="@drawable/pop_up_background">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/liteblack"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+               android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/select_location"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Select Your location"></TextView>
+                </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nolocation"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:text="Yet no location to show !"></TextView>
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/locations"
+                  android:background="@color/white"
+                  ></androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/liteblack"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:id="@+id/remove_from_wishlist"
+                android:weightSum="10"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add_location_black_24dp"
+                    android:tint="@color/color2"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Add new Location"
+                    android:textSize="13dp"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+
+                android:id="@+id/addnewlocation"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/search_bar_plate">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="House number"
+                            android:textColor="@color/color1"
+                            android:textSize="14sp"
+                            android:maxLength="10"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/montserrat"
+                            android:backgroundTint="@android:color/transparent"
+                            android:nextFocusDown="@+id/streetnumber"
+                            android:inputType="text"
+                            android:id="@+id/housenumber"
+                            ></EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/search_bar_plate"
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Street number"
+                            android:inputType="text"
+                            android:maxLength="10"
+                            android:textColor="@color/color1"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="14sp"
+                            android:nextFocusForward="@+id/colony"
+                            android:backgroundTint="@android:color/transparent"
+                            android:id="@+id/streetnumber"
+                            android:paddingLeft="10dp"></EditText>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_bar_plate"
+                    android:layout_margin="5dp">
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Colony"
+                    android:id="@+id/colony"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:nextFocusForward="@+id/colony"
+                android:fontFamily="@font/montserrat"
+                    android:textColor="@color/color1"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                ></EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_bar_plate"
+                    android:layout_margin="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color1"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Town/City"
+                    android:singleLine="true"
+                    android:nextFocusForward="@+id/nearby"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/montserrat"
+                    android:id="@+id/city"
+                    android:paddingLeft="10dp"
+                    android:inputType="text"
+                    android:maxLength="30"></EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/search_bar_plate"
+                    android:layout_margin="5dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Nearby Location"
+                    android:id="@+id/nearby"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:maxLength="50"
+                    android:fontFamily="@font/montserrat"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/color1"
+                    ></EditText>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:layout_margin="10dp"
+                    android:text="Add location"
+                    android:id="@+id/addgivenit"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/color1"
+                    ></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

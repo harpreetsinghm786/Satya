@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".About_us">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:title="About Us"
+                app:titleTextAppearance="@style/expandsubtitlebarsimple"
+                app:titleTextColor="@color/color1"></androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llaboutus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/logo_light"
+            android:scaleType="centerInside"
+            ></ImageView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:text="Welcome to Satya your No.1 source for all fashion world products. We're dedicated to giving you the very best of designer clothing, with focus on "
+            android:textColor="@color/color1"
+            android:textSize="14dp"></TextView>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="10"
+           android:orientation="horizontal">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot"
+                android:tint="@color/color2"
+                android:layout_marginLeft="15dp"></ImageView>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="left"
+                android:text="Customer oriented services "
+                android:textColor="@color/color1"
+                android:textSize="14dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot"
+                android:tint="@color/color2"
+                android:layout_marginLeft="15dp"></ImageView>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="left"
+                android:text="Best price in market "
+                android:textColor="@color/color1"
+                android:textSize="14dp"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/dot"
+                android:tint="@color/color2"
+                android:layout_marginLeft="15dp"></ImageView>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:gravity="left"
+                android:text="Benchmark quality"
+                android:textColor="@color/color1"
+                android:textSize="14dp"></TextView>
+        </LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:id="@+id/p1"
+            android:text="Founded in 1984 by Late Satya Devi, Satya has come along way from its beginnings in Patiala, Punjab, India. When Satya first started out, her passion for designing trends drove them to build the startup. We now serve our customer in various cities, and are thrilled that we're able to turn our passion into our own mobile Android application."
+            android:textColor="@color/color1"
+            android:justificationMode="inter_word"
+            android:textSize="14dp"></TextView>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:justificationMode="inter_word"
+            android:gravity="left"
+            android:text="We are passionate about creating beautiful looks for all occasions and customer needs we currently in need of people to work with and design clothings. Our team are also open to new ideas, and could be a really fun and productive part increative process."
+            android:textColor="@color/color1"
+            android:textSize="14dp"></TextView>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:justificationMode="inter_word"
+            android:layout_marginRight="15dp"
+            android:gravity="left"
+            android:text="We hope that you may enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us"
+            android:textColor="@color/color1"
+            android:textSize="15dp"></TextView>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Contact us"
+                android:textColor="@color/color1"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/advent_pro_medium"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="9">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/color2"
+                        android:src="@mipmap/instalogo"
+                        android:id="@+id/instagram"></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/color2"
+                        android:src="@mipmap/fblogo"
+                        android:id="@+id/facebook"></ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="3">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/color2"
+                        android:src="@mipmap/twitter"
+                        android:id="@+id/twitter"></ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" \u00A9 2020 Satya"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:textColor="@color/color1"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

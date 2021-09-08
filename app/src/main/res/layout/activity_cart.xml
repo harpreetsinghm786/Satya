@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        app:title="Cart"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/color1"
+        app:titleTextAppearance="@style/expandsubtitlebarsimple"
+        app:titleTextColor="@color/color1"></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/grey"
+           >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/cartbox">
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/cart"
+                    android:scaleType="centerCrop"></ImageView>
+
+
+
+
+            </LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Only 4 items"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp"
+                        android:id="@+id/cart_qty"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/color1"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/montserrat"
+                        ></TextView>
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/white"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                >
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey"
+                                    android:orientation="vertical">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/grey"
+                                    android:id="@+id/cart_recycler_view">
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:gravity="center"
+                                        android:background="@color/grey"
+
+                                        >
+                                        <ImageView
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:src="@mipmap/safe"
+                                            android:scaleType="centerCrop">
+                                        </ImageView>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Safe and Secure Payments. Easy returns. \n100% Authentic products."
+                                            android:fontFamily="@font/montserrat"
+                                            android:textColor="@color/color1"
+                                            android:textSize="13dp"
+
+                                            ></TextView>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+                                <ProgressBar
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:indeterminateTint="@color/color2"
+                                    android:layout_centerInParent="true"
+                                    android:id="@+id/progressbar"
+
+                                    ></ProgressBar>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:id="@+id/final_price"
+                android:textStyle="bold"
+                android:textColor="@color/color2"
+                android:textSize="18sp"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/color1"
+                android:text="Total Amount to pay"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="4">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonlogin"
+                android:backgroundTint="@color/color2"
+                android:textColor="@color/white"
+                android:id="@+id/proceedtobuy"
+                android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+                android:drawableTint="@color/white"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"
+                android:text="Continue"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emptycart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@mipmap/empty"
+                android:scaleType="centerInside"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="\nYour Shopping Cart is empty"
+                android:textColor="@color/color1"
+                android:textSize="15sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Start dreaming and shopping,\n Happy shopping!"
+                android:textColor="@color/color1"
+                android:textSize="12sp"></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+    <!--    /...........................................................-->
+
+
+
+</LinearLayout>
+
+

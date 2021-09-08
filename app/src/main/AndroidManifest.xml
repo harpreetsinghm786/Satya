@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.official.pb.satya">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_logo_foreground"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/new_logo_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".add_money"
+            android:theme="@style/mytheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Satya_wallet"
+            android:theme="@style/mytheme" />
+
+        <activity
+            android:name=".About_us"
+            android:theme="@style/mytheme" />
+
+        <activity
+            android:name=".track_your_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+
+        <activity
+            android:name=".finish_success_cart"
+            android:theme="@style/paymentstyle" />
+
+        <activity
+            android:name=".finish_success"
+            android:theme="@style/paymentstyle" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".cart_buying_process"
+            android:screenOrientation="portrait"
+            android:theme="@style/paymentstyle"
+            android:windowSoftInputMode="adjustNothing"
+           />
+
+        <activity
+            android:name=".buying_process"
+            android:screenOrientation="portrait"
+            android:theme="@style/paymentstyle"
+            android:windowSoftInputMode="adjustNothing"
+            />
+
+        <activity
+            android:name=".profile_editor"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".Zoomimage" />
+
+        <activity
+            android:name=".Wishlist_"
+            android:theme="@style/mytheme" />
+
+        <activity
+            android:name=".cart"
+            android:theme="@style/mytheme" />
+
+        <activity
+            android:name=".search"
+            android:theme="@style/mytheme"
+            android:windowSoftInputMode="stateVisible" />
+
+        <activity
+            android:name=".profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Verification"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Introslides"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/mytheme" />
+
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="http://sahungra.org/satya_insta/access_token.php" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

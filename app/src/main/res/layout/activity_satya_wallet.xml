@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Satya_wallet">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            app:title=""
+            app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center_vertical"
+            android:paddingLeft="50sp"
+            android:text="Satya Wallet"
+            android:textColor="@color/color1"
+            android:textSize="20sp"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/smooth_grey"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:context=".user.main_menu">
+
+
+        <LinearLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/window"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".recents">
+
+
+                    <com.google.android.material.appbar.AppBarLayout
+                        android:id="@+id/app_bar_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:fitsSystemWindows="true"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+                        <com.google.android.material.appbar.SubtitleCollapsingToolbarLayout
+                            android:id="@+id/collapsing_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp"
+                            android:background="@color/white"
+                            android:elevation="20dp"
+                            app:collapsedSubtitleTextAppearance="@color/color1"
+                            app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                            app:contentScrim="?attr/colorPrimary"
+                            app:expandedSubtitleTextAppearance="@color/color1"
+                            app:expandedTitleGravity="left|bottom"
+                            app:expandedTitleTextAppearance="@style/TextAppearance.Design.CollapsingToolbar.Expanded"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                            app:subtitle="Your Available Balance"
+                            app:title=" "
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="right|bottom">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:id="@+id/walletcover"
+                                    android:layout_width="145dp"
+                                    android:layout_height="145dp"
+                                    android:layout_margin="@dimen/fragment_title_padding_10"
+                                    android:elevation="10sp"
+                                    android:paddingTop="15sp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@mipmap/wallet"></com.makeramen.roundedimageview.RoundedImageView>
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.Toolbar
+                                android:id="@+id/toolbar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:outlineAmbientShadowColor="@color/white"
+                                android:outlineSpotShadowColor="@color/white"
+                                app:layout_collapseMode="pin"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                                app:subtitleTextAppearance="@style/Widget.AppCompat.RatingBar.Small"
+                                app:subtitleTextColor="@color/color1"
+                                app:titleTextColor="@color/color1"
+                                tools:ignore="MissingConstraints"
+                                tools:layout_conversion_absoluteHeight="56dp"
+                                tools:layout_conversion_absoluteWidth="495dp" />
+
+
+                        </com.google.android.material.appbar.SubtitleCollapsingToolbarLayout>
+
+
+
+                    </com.google.android.material.appbar.AppBarLayout>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/add_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp"
+                        android:backgroundTint="@color/color2"
+                        android:src="@drawable/ic_add_black_24dp"
+                        android:tint="@color/white"
+                        app:borderWidth="-1dp"
+                        app:layout_anchor="@id/app_bar_layout"
+                        app:layout_anchorGravity="bottom|right|end" />
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10sp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Wallet Transactions"
+                                    android:textColor="@color/color1"
+                                    android:textSize="15sp"></TextView>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/transactions"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"></androidx.recyclerview.widget.RecyclerView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="center">
+
+                                    <ProgressBar
+                                        android:id="@+id/wallet_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:indeterminate="true"
+                                        android:indeterminateTint="@color/color1"></ProgressBar>
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

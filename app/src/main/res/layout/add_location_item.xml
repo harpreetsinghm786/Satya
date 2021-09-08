@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="140dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+   android:layout_marginTop="22dp"
+    android:id="@+id/card"
+
+    android:background="@drawable/item_border"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/houseno"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+       android:singleLine="true"
+        android:textColor="@color/color1"
+        android:text="House no.496"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/street"
+        android:singleLine="true"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/color1"
+        android:text="Street 16"
+      ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="2"
+        android:id="@+id/colony_city"
+        android:textColor="@color/color1"
+        android:text="virk colony,\npatiala"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="4"
+        android:id="@+id/nearbytext"
+        android:textColor="@color/color1"
+        android:text="Nearby Gurudrawa hbsd"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        ></TextView>
+</LinearLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add_location_black_24dp"
+            android:tint="@color/color2"></ImageView>
+    </RelativeLayout>
+</LinearLayout>

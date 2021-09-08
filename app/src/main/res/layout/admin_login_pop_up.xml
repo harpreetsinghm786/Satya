@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/glass"
+    android:layout_gravity="center"
+   >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="5dp"
+      android:background="@drawable/buttonlogin"
+      android:backgroundTint="@color/white">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/color1"
+      android:layout_margin="15dp"
+      android:textSize="15dp"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:text="Login with Satya security"></TextView>
+
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      android:hint="First secret"
+      android:singleLine="true"
+      android:id="@+id/key1"
+      android:textColor="@color/color1"
+      android:maxLength="10"
+      android:textSize="15sp"
+      android:inputType="textPassword"
+      android:backgroundTint="@android:color/transparent"></EditText>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="10dp"
+      android:maxLength="10"
+      android:singleLine="true"
+      android:id="@+id/key2"
+      android:inputType="textPassword"
+      android:textColor="@color/color1"
+      android:layout_marginRight="20dp"
+      android:hint="Second secret"
+      android:textSize="15sp"
+      android:backgroundTint="@android:color/transparent"></EditText>
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/color2"
+        android:text="Yes, Proceed"
+        android:textAllCaps="false"
+        android:textColor="@color/white"></Button>
+  <Button
+      android:id="@+id/no"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="10dp"
+      android:layout_marginRight="10dp"
+      android:background="@drawable/button"
+      android:backgroundTint="@color/color1"
+      android:text="No, Cancel"
+      android:textAllCaps="false"
+      android:textColor="@color/white"></Button>
+  </LinearLayout>
+
+</LinearLayout>

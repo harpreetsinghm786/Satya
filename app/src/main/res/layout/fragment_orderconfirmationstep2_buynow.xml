@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="@dimen/fragment_title_padding_10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15sp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="9">
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_weight="3"
+                                        android:background="@color/color2"></View>
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_weight="3"
+                                        android:background="@color/color2"></View>
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="1dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="3"
+                                        android:background="@color/color1"></View>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="top|center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="12">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="left"
+
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:background="@drawable/card_board">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:scaleType="centerInside"
+                                                android:src="@drawable/ic_playlist_add_check_black_24dp"
+                                                android:tint="@color/white"></ImageView>
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Product\nSelected"
+                                            android:fontFamily="@font/montserrat"
+                                            android:textColor="@color/color2"
+                                            android:textSize="10sp"></TextView>
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+
+                                            android:background="@drawable/card_board"
+                                            android:backgroundTint="@color/color2">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:scaleType="centerInside"
+                                                android:src="@drawable/ic_add_location_black_24dp"
+                                                android:tint="@color/white"></ImageView>
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Choose\nLocation"
+                                            android:fontFamily="@font/montserrat"
+                                            android:textColor="@color/color2"
+                                            android:textSize="10sp"></TextView>
+
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3.5"
+                                        android:gravity="right"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:layout_marginRight="19sp"
+                                            android:background="@drawable/card_board"
+                                            android:backgroundTint="@color/color2">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:scaleType="centerInside"
+                                                android:src="@drawable/cashback"
+                                                android:tint="@color/white"></ImageView>
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/montserrat"
+                                            android:text="Choose\nPayment Mode"
+                                            android:textColor="@color/color2"
+                                            android:textSize="10sp"></TextView>
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2.5"
+                                        android:gravity="right"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="30dp"
+                                            android:layout_height="30dp"
+                                            android:background="@drawable/card_board"
+                                            android:backgroundTint="@color/color1">
+
+                                            <ImageView
+                                                android:layout_width="20dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:scaleType="centerInside"
+                                                android:src="@drawable/ic_check_circle_black_24dp"
+                                                android:tint="@color/white"></ImageView>
+
+                                        </RelativeLayout>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="2dp"
+                                            android:gravity="center"
+                                            android:text="Finish"
+                                            android:fontFamily="@font/montserrat"
+                                            android:textColor="@color/color1"
+                                            android:textSize="10sp"></TextView>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/buttonlogin"
+                                    android:backgroundTint="@color/white"
+                                    android:orientation="horizontal"
+                                    android:padding="15dp">
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/buttonlogin"
+                                    android:backgroundTint="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/buttonlogin"
+                                    android:backgroundTint="@color/white"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RadioGroup
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:id="@+id/radio_group">
+
+                                <RadioButton
+                                    android:id="@+id/radio1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="20dp"
+                                    ></RadioButton>
+                                <RadioButton
+                                    android:id="@+id/radio2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="10dp"></RadioButton>
+
+                                <RadioButton
+                                    android:id="@+id/radio3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="60dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"></RadioButton>
+
+                            </RadioGroup>
+
+
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="10">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@drawable/buttonlogin"
+                                    android:backgroundTint="@color/white"
+                                    android:gravity="left|center_vertical"
+                                    android:orientation="horizontal"
+                                    android:paddingLeft="10dp">
+
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:scaleType="centerInside"
+                                        android:src="@mipmap/paytm"></ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/montserrat"
+                                        android:text="  Pay By Paytm UPI Account"
+                                        android:textColor="@color/color1"
+                                        android:textSize="14dp"
+                                        android:textStyle="bold"></TextView>
+
+                                </LinearLayout>
+
+
+                                <!--                <Button-->
+                                <!--                    android:id="@+id/countinue"-->
+                                <!--                    android:layout_width="0dp"-->
+                                <!--                    android:layout_height="80dp"-->
+                                <!--                    android:layout_marginLeft="10dp"-->
+                                <!--                    android:layout_marginTop="20dp"-->
+                                <!--                    android:layout_weight="3"-->
+                                <!--                    android:background="@drawable/button"-->
+                                <!--                    android:backgroundTint="@color/color1"-->
+                                <!--                    android:text="Pay now"-->
+                                <!--                    android:textAllCaps="false"-->
+                                <!--                    android:textColor="@color/white"></Button>-->
+
+
+                                <!--                <Button-->
+                                <!--                    android:id="@+id/btn_cod"-->
+                                <!--                    android:layout_width="0dp"-->
+                                <!--                    android:layout_weight="3"-->
+                                <!--                    android:layout_height="80dp"-->
+                                <!--                    android:layout_marginLeft="10dp"-->
+                                <!--                    android:layout_marginTop="20dp"-->
+                                <!--                    android:layout_marginRight="5dp"-->
+                                <!--                    android:background="@drawable/button"-->
+                                <!--                    android:backgroundTint="@color/grey"-->
+                                <!--                    android:text="Cash on Delivery"-->
+                                <!--                    android:textAllCaps="false"-->
+                                <!--                    android:textColor="@color/white"></Button>-->
+
+
+                            </LinearLayout>
+
+                            <!--            <Button-->
+                            <!--                android:id="@+id/pay_by_satya_wallet"-->
+                            <!--                android:layout_width="match_parent"-->
+                            <!--                android:layout_height="60dp"-->
+                            <!--                android:layout_marginLeft="10dp"-->
+                            <!--                android:layout_marginTop="10dp"-->
+                            <!--                android:layout_marginRight="10dp"-->
+                            <!--                android:background="@drawable/button"-->
+                            <!--                android:backgroundTint="@color/white"-->
+                            <!--                android:text="Pay by Satya Wallet"-->
+                            <!--                android:textAllCaps="false"-->
+                            <!--                android:textSize="14dp"-->
+                            <!--                android:textStyle="bold"-->
+                            <!--                android:fontFamily="@font/montserrat"-->
+                            <!--                android:textColor="@color/color1"></Button>-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/buttonlogin"
+                                android:backgroundTint="@color/white"
+                                android:gravity="left|center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="10dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/satya_round"
+                                    app:riv_corner_radius="20dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="  Pay by Satya Wellet"
+                                    android:textColor="@color/color1"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/buttonlogin"
+                                android:backgroundTint="@color/white"
+                                android:gravity="left|center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="10dp">
+
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:padding="5dp"
+                                    android:scaleType="centerInside"
+                                    android:src="@mipmap/cash"
+                                    app:riv_corner_radius="20dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="  Cash On Delivery"
+                                    android:textColor="@color/color1"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold"></TextView>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/msg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:gravity="center"
+                                    android:text="User Details (for this order only)"
+                                    android:textColor="@color/color1"
+                                    android:textSize="15sp"
+                                    android:textStyle="bold"></TextView>
+
+                                <LinearLayout
+                                    android:id="@+id/edituser"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@color/fade"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp"
+                                    android:weightSum="10">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="2"
+                                        android:gravity="top|center">
+
+                                        <com.makeramen.roundedimageview.RoundedImageView
+                                            android:id="@+id/userpic"
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:layout_marginTop="5dp"
+                                            android:scaleType="centerCrop"
+                                            app:riv_corner_radius="30dp"></com.makeramen.roundedimageview.RoundedImageView>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="8"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/username"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="left|center_vertical"
+                                            android:textColor="@color/color1"
+                                            android:textSize="15sp"
+                                            android:textStyle="bold"></TextView>
+
+
+                                        <TextView
+                                            android:id="@+id/userphonenumber"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:gravity="left|center_vertical"
+                                            android:textColor="@color/color1"
+                                            android:textSize="12sp"></TextView>
+
+                                        <EditText
+                                            android:id="@+id/extranumber"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@android:color/transparent"
+                                            android:hint="+91 Extra phone number(Optional)"
+                                            android:inputType="number"
+                                            android:textSize="12sp"></EditText>
+
+                                        <TextView
+                                            android:id="@+id/useraddress"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:gravity="left|center_vertical"
+                                            android:maxLines="2"
+                                            android:textColor="@color/color1"
+                                            android:textSize="12sp"></TextView>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Shopping Details"
+                                android:textColor="@color/color1"
+                                android:textSize="15sp"
+                                android:textStyle="bold"></TextView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:padding="10dp"
+                                    android:text="Delivery Mode : "
+                                    android:textColor="@color/color1"
+                                    android:textSize="15sp"></TextView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/freedeliverycard"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/buttonlogin"
+                                        android:backgroundTint="@color/color1"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <com.makeramen.roundedimageview.RoundedImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:src="@drawable/logo"
+                                            app:riv_corner_radius="20dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="20dp"
+                                                android:fontFamily="@font/montserrat"
+                                                android:gravity="center_vertical"
+                                                android:text="FREE Delivery"
+                                                android:textColor="@color/white"
+                                                android:textSize="10dp"></TextView>
+
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/fastdeliverycard"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/buttonlogin"
+                                        android:backgroundTint="@color/color1"
+                                        android:orientation="horizontal"
+                                        android:visibility="gone">
+
+                                        <com.makeramen.roundedimageview.RoundedImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:src="@drawable/logo"
+                                            app:riv_corner_radius="20dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="20dp"
+                                                android:fontFamily="@font/montserrat"
+                                                android:gravity="center_vertical"
+                                                android:text="FAST Delivery"
+                                                android:textColor="@color/white"
+                                                android:textSize="10dp"></TextView>
+
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+                            </LinearLayout>
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/allitems"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp"
+                                        android:weightSum="10">
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:src="@drawable/ic_check_circle_black_24dp"
+                                            android:tint="@android:color/holo_green_dark"></ImageView>
+
+                                        <TextView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_weight="7"
+                                            android:text="Delivery Charges"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="12dp"></TextView>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2"
+                                            android:gravity="right"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="₹ "
+                                                android:textColor="@color/lightblack"
+                                                android:textSize="12dp"></TextView>
+
+                                            <TextView
+
+                                                android:id="@+id/deliverycharges"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="00.00"
+                                                android:textColor="@color/lightblack"
+                                                android:textSize="12dp"></TextView>
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:background="@color/white"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal"
+                                        android:padding="5dp"
+                                        android:weightSum="10">
+
+                                        <ImageView
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:src="@drawable/ic_check_circle_black_24dp"
+                                            android:tint="@android:color/holo_green_dark"></ImageView>
+
+                                        <TextView
+
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:layout_weight="7"
+                                            android:text="Service Tax"
+                                            android:textColor="@color/lightblack"
+                                            android:textSize="12dp"></TextView>
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="2"
+                                            android:gravity="right"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="₹ "
+                                                android:textColor="@color/lightblack"
+                                                android:textSize="12dp"></TextView>
+
+                                            <TextView
+
+                                                android:id="@+id/servicetax"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/lightblack"
+                                                android:textSize="12dp"></TextView>
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/grey"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/safe"></ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Safe and Secure Payments. Easy returns. \n100% Authentic products."
+                            android:textColor="@color/color1"
+                            android:textSize="13dp"
+
+                            ></TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:elevation="10dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/total_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹ 0"
+                        android:textColor="@color/color2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Amount to pay"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/color1"
+                        android:textSize="13sp"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/countinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/buttonlogin"
+                        android:backgroundTint="@color/color2"
+                        android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+                        android:drawableTint="@color/white"
+                        android:paddingLeft="10dp"
+                        android:text="Place Order"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"></Button>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/grandtotalbox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color1"
+            android:orientation="horizontal"
+            android:visibility="gone"
+
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Grand Total"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/numofitems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:text="(4 items)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"></TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:text="₹ "
+                    android:textColor="@color/white"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/grandtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:text="500.00"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

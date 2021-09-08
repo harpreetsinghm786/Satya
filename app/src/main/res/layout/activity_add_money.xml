@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".add_money">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:title="Add Money"
+                android:layout_weight="1"
+                app:titleTextAppearance="@style/expandsubtitlebarsimple"
+                app:titleTextColor="@color/color1"></androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Money to Satya Wallet"
+            android:gravity="left"
+            android:textSize="24sp"
+            android:textColor="@color/color1"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Balance: ₹ "
+                android:gravity="left"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:text="500"
+                android:textColor="@color/green"
+                android:id="@+id/wallet_balance"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15sp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:id="@+id/rupee"
+                android:textSize="24dp"
+                ></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:inputType="numberSigned"
+                android:textColor="@color/color1"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:id="@+id/amount"
+                android:textColorHint="@color/color4"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/color1"
+            android:drawableTint="@color/color1"
+            android:textSize="14dp"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/tag"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_account_balance_wallet_black_24dp"
+            android:text="  Money will be added to Satya Wallet"
+            android:layout_above="@+id/proceed"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter valid amount !"
+            android:layout_marginLeft="15sp"
+            android:textColor="@color/color2"
+            android:visibility="gone"
+            android:id="@+id/error"
+            android:textSize="15sp"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_above="@id/proceed"
+        android:layout_marginBottom="20dp"
+        android:background="@color/grey"
+
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/safe"
+            android:scaleType="centerCrop">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safe and Secure Payments. Easy returns. \n100% Authentic products."
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/color1"
+            android:textSize="13dp"
+
+            ></TextView>
+    </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/proceed"
+            android:text="Proceed"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/color2"
+            android:layout_marginBottom="25dp"
+            android:onClick="Add_Amount_to_wallet"
+            />
+
+</RelativeLayout>

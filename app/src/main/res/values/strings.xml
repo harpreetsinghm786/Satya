@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Satya</string>
+    <string name="open">navigation bar opened</string>
+    <string name="closed">Navigation bar closed</string>
+    <string name="tc"> <u>T&amp;C Applied</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mrp_1_999"> MRP:<strike> ₹ 1,999.00</strike></string>
+</resources>

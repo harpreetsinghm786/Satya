@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    android:layout_marginTop="20dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:src="@mipmap/drawer_cov"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:scaleType="centerCrop"></ImageView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/profilepic"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="14sp"
+            android:layout_marginTop="30sp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="30dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+
+        <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14sp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="Harpreet"
+                    android:textStyle="bold"
+                    android:textColor="@color/color1"
+                    android:fontFamily="@font/montserrat"
+                    android:textSize="18sp"></TextView>
+
+                <TextView
+                    android:id="@+id/phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="left"
+                    android:text="7087113276"
+                    android:textColor="@color/color1"
+                    android:textSize="12sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:paddingRight="5dp"
+
+                android:layout_weight="2">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:id="@+id/profileeditor"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/cute_button"
+            android:tint="@color/white"
+            android:backgroundTint="@color/color1"
+            android:src="@drawable/ic_edit_black_24dp"></ImageButton>
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

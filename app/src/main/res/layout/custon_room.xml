@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="10">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customise"></RadioButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/color1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Custom Room"></TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Neck Design"
+       android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view"
+        android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Measurements"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"></TextView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/kamiz"></ImageView>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Length"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/measurement_button"></Button>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Bust"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/measurement_button"></Button>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Waist"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/measurement_button"></Button>
+</RelativeLayout>
+</LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:text="Standard sizes"></RadioButton>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/warning">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/image_slider"
+
+                            ></include>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                               android:orientation="vertical"
+                                android:id="@+id/womens_block"
+                                android:gravity="center_horizontal"
+                                >
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:riv_corner_radius="100dp"
+                                    app:riv_border_width="0.5dp"
+                                    app:riv_border_color="@color/blackover"
+                                    android:src="@mipmap/women"></com.makeramen.roundedimageview.RoundedImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/color1"
+                                    android:text="Womens"></TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:id="@+id/girls_block"
+                                android:gravity="center_horizontal"
+                                >
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:riv_border_width="0.5dp"
+                                    app:riv_border_color="@color/blackover"
+                                    app:riv_corner_radius="100dp"
+                                    android:src="@mipmap/girls"></com.makeramen.roundedimageview.RoundedImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/color1"
+                                    android:text="Girls"></TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:id="@+id/kids_block"
+                                android:gravity="center_horizontal"
+                                >
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:riv_corner_radius="100dp"
+                                    app:riv_border_width="0.5dp"
+                                    app:riv_border_color="@color/blackover"
+                                    android:src="@mipmap/kids"></com.makeramen.roundedimageview.RoundedImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/color1"
+                                    android:text="Kids"></TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:id="@+id/marriage_block"
+                                android:gravity="center_horizontal"
+                                >
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:riv_corner_radius="100dp"
+                                    app:riv_border_color="@color/blackover"
+                                    app:riv_border_width="0.5dp"
+                                    android:src="@mipmap/marriage"
+                                    android:scaleType="centerCrop"
+                                  ></com.makeramen.roundedimageview.RoundedImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/color1"
+                                    android:text="Marriage"></TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:id="@+id/simple_block"
+                                android:gravity="center_horizontal"
+                                >
+                                <com.makeramen.roundedimageview.RoundedImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    app:riv_corner_radius="100dp"
+                                    app:riv_border_width="0.5dp"
+                                    app:riv_border_color="@color/blackover"
+                                    android:src="@mipmap/house"></com.makeramen.roundedimageview.RoundedImageView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textSize="12dp"
+                                    android:gravity="center_horizontal"
+                                    android:textColor="@color/color1"
+                                    android:text="Simple"></TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/color2"
+                    android:id="@+id/mask_section"
+                    android:background="@drawable/buttonlogin"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/quard_circle"
+                            app:riv_corner_radius="10dp"
+                            android:tint="@color/color1"></com.makeramen.roundedimageview.RoundedImageView>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/quard_circle"
+                            android:tint="@color/lite_main"></ImageView>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/quard_circle"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:rotation="180"
+                            android:tint="@color/lite_main"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="10"
+                            >
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="3.5"
+                                android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@mipmap/mask"></ImageView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="6"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mask up India"
+                                    android:textSize="17dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textStyle="bold"
+                                    android:elevation="10dp"
+                                    android:textColor="@color/white"></TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Your Mask to the Cart"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/white"></TextView>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="75% off"
+                                    android:textSize="24dp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:textColor="@color/white"></TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See Into It"
+                            android:textSize="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_margin="10dp"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:drawableTint="@color/color1"
+                            android:drawableRight="@drawable/ic_arrow_forward_white"
+                            android:fontFamily="@font/montserrat"
+                            android:textColor="@color/color1"></TextView>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/main_product_line"></androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/timming_tag"
+                        android:layout_marginLeft="10dp"></ImageView>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/color1"
+                        android:textStyle="bold"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="13dp"
+                        android:text="We're here to help. Our essential delivery services are open from:"></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat"
+                        android:textColor="@color/color2"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:text="9:00 AM to 5:00 PM"></TextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/grey_gradient"
+                    android:paddingBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="30dp">
+                        >
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/color1"></View>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/color2"
+                            android:fontFamily="@font/montserrat"
+                            android:text=" Do Some More with Satya"></TextView>
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_weight="1.5"
+                            android:background="@color/color1"></View>
+                    </LinearLayout>
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:layout_height="175dp"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="5dp"
+                      android:padding="7dp"
+                      android:src="@mipmap/free_iron_banner"
+                      ></ImageView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+
+                    >
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="220dp"
+                        android:src="@mipmap/lowest_prices_banner"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        ></com.makeramen.roundedimageview.RoundedImageView>
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="220dp"
+                       android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/customer_satisfaction"
+                        ></com.makeramen.roundedimageview.RoundedImageView>
+                </LinearLayout>
+                </LinearLayout>
+
+                <include layout="@layout/user_review_section"></include>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/footer"></ImageView>
+
+            <!--         mainbody  -->
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+       </LinearLayout>
+
+
+   </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+
+
+
+

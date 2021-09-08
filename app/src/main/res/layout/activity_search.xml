@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+   >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+                        <androidx.appcompat.widget.Toolbar
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                            android:id="@+id/toolbar"
+                            app:titleTextColor="@color/color1"
+                            ></androidx.appcompat.widget.Toolbar>
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="8"
+                            android:iconifiedByDefault="false"
+                            android:id="@+id/searchbar"
+                            android:inputType="text"
+                            android:imeOptions="actionGo"
+                            android:hint="Search here"
+                            android:background="@drawable/rightdraw"
+                            android:backgroundTint="@color/grey"
+                            android:layout_margin="10dp"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textSize="15dp"
+                            android:textColor="@color/color1"
+                            android:searchHintIcon="@drawable/ic_search_black_24dp"
+                            ></EditText>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="center"
+                            android:paddingRight="10dp"
+                            android:id="@+id/searchit"
+                            android:src="@drawable/ic_search_black_24dp"
+                            ></ImageView>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerviewHistory"
+        android:background="@color/white"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:visibility="gone"
+        android:background="@color/white"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/noresult"
+        android:background="@color/liteblack"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:tint="@color/color1"
+            android:src="@drawable/ic_search_black_24dp"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color1"
+            android:text="\nSorry! no reasults found"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color1"
+            android:text="You can search any thing from\n  suggestion list"
+            android:gravity="center"
+            android:textSize="12sp"
+            ></TextView>
+    </LinearLayout>
+</RelativeLayout>
+
+</FrameLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

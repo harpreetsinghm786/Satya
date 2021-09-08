@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rightdraw"
+        android:backgroundTint="@color/white"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/golden"
+                android:src="@drawable/ic_star_black_24dp"></ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/golden"
+                android:src="@drawable/ic_star_black_24dp"></ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/golden"
+                android:src="@drawable/ic_star_black_24dp"></ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/golden"
+                android:src="@drawable/ic_star_black_24dp"></ImageView>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/golden"
+                android:src="@drawable/ic_star_black_24dp"></ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/customer_url"
+                app:riv_corner_radius="20dp"
+                ></com.makeramen.roundedimageview.RoundedImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sonia Sachan"
+                    android:textColor="@color/color1"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:id="@+id/name_of_customer"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/montserrat"></TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="13dp"
+            android:id="@+id/review"
+            android:textColor="@color/color1"
+            android:text="Amazon was one of the first online stores to allow consumers to post reviews of products in 1995, and it remains one of the most important resources for consumers looking to make informed purchase decisions. Even if people can and even do buy a product elsewhere, if it's sold on Amazon.com -- unless it's gasoline or drug paraphernalia, that is -- then many people will look up its Amazon review before they decide to buy."></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/golden"
+            android:layout_height="wrap_content"
+            android:gravity="right"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/bar"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/tab_indicator"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
